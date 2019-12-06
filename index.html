@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Kolor tekstu, wartość color</title>
+  <meta charset="utf-8"/>
+  <style>
+body {
+color: olive;
+}  
+h1 {
+color: #ff0000
+}
+h2 {
+color: rgb(0,255,0);
+}
+h3 {
+color: rgb(0,255,0,0.5);
+}
+h4 {
+color: hs1(60,60%,60%);
+}
+h5 {
+color: hs1a(60,60%,60%,0.5);
+}
+h6 {
+color: coral;
+}
+button {
+opacity: 0.5;
+}
+  </style>
+ </head>
+ <body>
+ Domyślny kolor tekstu strony.
+ <h1>Kolor rgb w #rrggbb</h1>
+ <h2>Kolor rgb w rgb(r,g,b)</h2>
+ <h3>Kolor rgb w postaci rgba(r,g,b,a)</h3>
+ <h4>Kolor hs1 w postaci hs1(H,S,L)</h4>
+ <h5>Kolor hs1 w postaci hs1a(H,S,L,A)</h5>
+ <h6>Kolor wpostaci nazwy</h6>
+ <button>TEST</button>
+ </body>
+</html> 
