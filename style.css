@@ -38,7 +38,7 @@ body
     border-color: 0033FF;
     border-style: solid;
     border-width: 7px;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
 	background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.6); 
 }
@@ -53,7 +53,7 @@ body
     border-color: 0033FF;
     border-style: solid;
     border-width: 7px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 	background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.6); 
 }
@@ -157,7 +157,7 @@ body
     border-width: 7px;
     margin: 10px;
     padding: 10px;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
 	background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.6); 
 }
