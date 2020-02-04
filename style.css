@@ -64,59 +64,50 @@ body{
   background-color: #4CAF50;
   color: white;
 }
-.yt
-{
+.yt{
 	width: 49px;
 	height: 49px;
 	background-color: #d94348;
 	float: left;
 }
 
-.yt:hover
-{
+.yt:hover{
 	background-color: #c83237;
 }
 
-.fb
-{
+.fb{
 	width: 49px;
 	height: 49px;
 	background-color: #4668b3;
 	float: left;
 }
 
-.fb:hover
-{
+.fb:hover{
 	background-color: #3557a2;
 }
 
-.github
-{
+.github{
 	width: 49px;
 	height: 49px;
 	background-color: #263238;
 	float: left;
 }
 
-.github:hover
-{
+.github:hover{
 	background-color: #152127;
 }
 
-.zse
-{
+.zse{
 	width: 49px;
 	height: 49px;
 	background-color: #FF9900;
 	float: left;
 }
 
-.zse:hover
-{
+.zse:hover{
 	background-color: #EE8800;
 }
-a.socialmedialink
-{
+a.socialmedialink{
 	color: #ffffff;
 	text-decoration: none;
 	padding:0px;
