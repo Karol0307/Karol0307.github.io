@@ -59,11 +59,6 @@ body{
   background-color: #ddd;
   color: black;
 }
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
 .yt{
 	width: 49px;
 	height: 49px;
