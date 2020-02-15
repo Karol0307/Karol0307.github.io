@@ -3,9 +3,8 @@ body{
 	width: 100%;
 	margin: 0;
 	font-family: cursive;
-	background: url('tłogłówne.jpg');
+	background: url('tłogłówne.jpg') right;
 	color: white;
-	background-position: right;
 }
 		
 .topnav {
