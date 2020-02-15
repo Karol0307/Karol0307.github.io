@@ -57,7 +57,7 @@ body{
 .kwadrat{
 	height:225px;
 	width:400px;
-	border-color: rgb(3, 48, 130) solid;
+	border: rgb(3, 48, 130) solid;
 	margin:15px;
 }
 .kwadrat:hover{
