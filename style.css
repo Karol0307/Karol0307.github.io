@@ -59,6 +59,7 @@ body{
 	width:400px;
 	border: rgb(3, 48, 130) solid;
 	margin:15px;
+	margin-bottom: 5px;
 }
 .kwadrat:hover{
    filter: brightness(80%);
