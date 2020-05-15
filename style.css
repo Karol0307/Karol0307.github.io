@@ -10,7 +10,7 @@ body{
 .topnav {
   background-color: rgb(20, 35, 55);
   overflow: hidden; 
-  position: absolute;
+  position: relative;
 }
 #zegar{
 	float: right;
