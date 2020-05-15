@@ -1,0 +1,32 @@
+body {
+	font-family: Helvetica;
+	margin: auto;
+}
+#bl, #l{
+	background-color: rgb(130,69,85);
+    color: white;
+	width: 30%;
+	height: 200px;
+	text-align: center;
+	float: left;
+}
+#bp, #p{
+	background-color: rgb(130,69,85);
+	color: white;
+	width: 70%;
+	height: 200px;
+	text-align: center;
+	float: left;
+}
+#gl, footer{
+	background-color: rgb(240,234,226);
+	padding: 120px;
+}
+table, td{
+	border: 1px solid rgb(130,69,85);
+	color: rgb(130,69,85);
+	padding: 10px;
+}
+a {
+	color: rgb(240,234,226);
+}
