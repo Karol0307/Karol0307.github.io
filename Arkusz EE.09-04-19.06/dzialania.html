@@ -1,0 +1,90 @@
+<!DOCTYPE htlm>
+<html lang="pl">
+<head>
+<meta charset = "utf-8">
+<title>Działania matematyczne</title>
+<link rel="stylesheet" href="styl.css" type="text/css"/>
+</head>
+
+<body>
+
+<div id="b1">
+<img src="logo.jpg" alt="matematyka">
+</div>
+<div id="b2">
+<h1>Pomocnik Matematyczny</h2>
+</div>
+<div id="b3">
+<a href="dzialania.html"><h4>Działania</h4></a>
+</div>
+<div id="b4">
+<a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a>
+</div>
+
+<div id="l">
+<h3>Proste działanie</h3>
+<p>liczba A:<input type="number" id="a"></input></p>
+<p>liczba B:<input type="number" id="b"></input></p>
+<button onclick="dodawanie()">+</button>
+<button onclick="odejmowanie()">-</button>
+<button onclick="mnozenie()">*</button>
+<button onclick="dzielenie()">/</button>
+<button onclick="potegowanie()">A^B</button>
+<div id="wynik"></div>
+</div>
+<div id="p">
+ <ul>
+  <li>dodawanie</li>
+  <li>odejmowanie</li>
+  <li>mnożenie</li>
+  <li>dzielenie</li>
+  <li>potęgowanie</li>
+ </ul> 
+</div>
+<footer>
+<p>Autor: PESEL</p>
+</footer>
+<script>
+function dodawanie()
+{
+var a=+document.getElementById("a").value;
+var b=+document.getElementById("b").value;
+ var wartosc= a + b;
+ document.getElementById("wynik").innerHTML="Wynik: "+ wartosc;
+}
+function odejmowanie()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+ var wartosc= a - b;
+ document.getElementById("wynik").innerHTML="Wynik: "+ wartosc;
+}
+function mnozenie()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+ var wartosc= a * b;
+ document.getElementById("wynik").innerHTML="Wynik: "+ wartosc;
+}
+function dzielenie()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+ var wartosc= a / b;
+ if(b == 0){
+ document.getElementById("wynik").innerHTML="Niepoprawne dane";
+ }
+ else{
+ document.getElementById("wynik").innerHTML="Wynik: "+ wartosc;
+ }
+}
+function potegowanie()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+ var wartosc= a ** b;
+ document.getElementById("wynik").innerHTML="Wynik: "+ wartosc;
+}
+</script>
+</body>
+</html>
