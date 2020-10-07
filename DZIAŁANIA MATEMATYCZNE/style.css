@@ -1,0 +1,13 @@
+body{
+	margin:0;
+	margin-left:20%;
+	margin-right:20%;
+}
+#menu{
+	width:20%;
+	float: left;
+}
+#glowna{
+	width: 80%;
+	float: left;
+}
