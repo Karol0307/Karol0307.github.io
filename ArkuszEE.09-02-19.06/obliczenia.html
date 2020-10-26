@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <title>Stacja paliw</title>
+  <link rel="stylesheet" href="styl3.css" type="text/css"/>
+ </head>
+ <body>
+ <div id="bl"><h1>Stacja Paliw</h1></div>
+ <div id="bp"><a href="stacja.html"><img src="home.png"></a>
+  <a href="obliczenia.html"><img src="znak.png"></a></div>
+ <div id="gl"><h3>Oblicz koszt paliwa</h3>
+  <label>Rodzaj paliwa (1-benzyna, 2-olej napedowy)<br><input type="number" id ="a"></label><br>
+  <label>Ile litrów:<br><input type="number" id="b"> </label> <br>
+ <input type="button" value="OBLICZ" onclick="paliwo()">
+ <div id ="wynik"></div></div>
+ <div id="l"><a href="kweendy.txt">Pobierz kwerendy</a></div>
+ <div id="p"><img src="samochod.png" alt="samochód"></div>
+ <footer><p>Stronę opracował: PESEL</p></footer>
+<script>
+function paliwo()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+if (a == 1) 
+{
+   var suma= 4*b;
+  document.getElementById("wynik").innerHTML="Koszt paliwa: "+ suma +"zł";
+} 
+else if(a == 2) 
+{  
+  var suma= 3.5*b;
+  document.getElementById("wynik").innerHTML="Koszt paliwa: "+ suma +"zł";
+}
+else
+{
+ document.getElementById("wynik").innerHTML="Koszt paliwa 0 zł";
+}
+}
+</script>
+ </body>
+</html> 
