@@ -5,6 +5,9 @@ body{
 	overflow-x: hidden;
 	width: auto;
 }
+html {
+    scroll-behavior: smooth;
+}
 #Glowna{
 	background: url("tloprojekty.jpg") no-repeat center fixed;
 	height: 100vh;
