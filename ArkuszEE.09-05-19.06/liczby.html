@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css" type="text/css" />
+</head>
+
+<body>
+    <div id="b1">
+        <h2>Poznaj Ciągi Liczbowe
+    </div>
+    <div id="b2"><a href="liczby.html">
+            <h5>Ciągi arytmetyczne</h5>
+        </a></div>
+    <div id="b3"><a href="fib.html">
+            <h5>Ciąg Fibonacego</h5>
+        </a></div>
+    <div id="b4"><img src="obraz1.png" alt="Fibonaci"></div>
+    <div id="l">
+        <ol>
+            <li>ciągi arytmetyczne</li>
+            <li>ciągi geometrycne</li>
+            <li>ciąg Fibonacego</li>
+        </ol>
+    </div>
+    <div id="p">
+        <h2>Generowanie ciągu arytmetycznego</h2>
+        <p>Pierwszy wyraz A1:<input type="number" id="wyraz"></p>
+        <p>Różnica ciągu R:<input type="number" id="roznica"></p>
+        <p>Liczba wyrazów w ciągu N:<input type="number" id="liczba"></p>
+        <button onclick="ciag()">Generuj Ciąg</button>
+        <p id="wynik"></p>
+    </div>
+    <div id="stopka">
+        <p>Autor: PESEL</p>
+    </div>
+    <script>
+        function ciag() {
+            var a = +document.getElementById("wyraz").value;
+            var b = +document.getElementById("roznica").value;
+            var c = +document.getElementById("liczba").value;
+            document.getElementById("wynik").innerHTML = "Ciąg arytmetyczny zawiera: ";
+            for (var x = 0; x < c; x++) {
+                document.getElementById("wynik").innerHTML+=a+" ";
+                a+=b;
+            }
+        }
+    </script>
+</body>
+
+</html>
