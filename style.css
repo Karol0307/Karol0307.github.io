@@ -16,6 +16,7 @@ body {
 #Omnie {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: url("tlo.jpg") no-repeat center;
+        background-size: cover;
 	width: 100%;
 	text-align: center;
 	font-size: 200%;
@@ -41,6 +42,7 @@ body {
 
 #Kontakt {
 	background: url("tlokontakt.jpg") right;
+        background-size: cover;
 	width: 100%;
 	font-size: 200%;
 	height: 100vh;
