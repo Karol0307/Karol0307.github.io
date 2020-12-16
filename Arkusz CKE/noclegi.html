@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl_1.css" type="text/css">
+    <title>Wakacje marzeń</title>
+</head>
+<body>
+    <div id="strona">
+    <div id="g1">
+        <img src="logo.png" alt="nasze logo">
+    </div>
+    <div id="g2">
+        <h1 id="a">Biuro Turystyczne - Wakacje marzeń</h1>
+    </div>
+    <div id="baner">
+        <h1 id="b">Na tej stronie znajdziesz noclegi w wybranej miejscowości</h1>
+    </div>
+    <div id="gl">
+        <img src="morze.jpg" alt="wybrzeże">
+        <table>
+            <tr>
+                <td><h3>miejscowość</h3></td> <td><h3>rodzaj noclegu</h3></td>
+            </tr>
+            <tr>
+                <td>1.Rewal<br>2.Sopot<br>3.Ustka<br>4.Jastarnia<br>5.Malbork<br>6.Zakopane<br>7.Karpacz<br>8.Cisna</td> 
+                <td><br>1.apartament<br>2.hotel<br>3.pensjonat<br>4.kwatera prywatna<br>5.agroturystyka<br>6.domek kempingowy</td>
+            </tr>
+        </table>
+        <button onclick="skrypt4()">Wersja dla osób słabowidzących</button>
+    </div>
+    <div id="gp">
+        <img src="góry.jpg" alt ="góry">
+        <h4>Wpisz poniżej numery</h4>
+        <label>miejscowości <input type="number"></label><br>
+        <label>rodzaj noclegu <input type="number"></label><br>
+        <button>WYBIERZ</button>
+        <button>WYCZYŚĆ</button>
+    </div>
+    <div id="stopka">
+        <p>adres: ul.Wakacyjna 12 Wrocław, telefon: 123123123, e-mail: biuro.turystyczne@wp.pl"</p>
+    </div>
+    </div>
+    <script>
+        function skrypt4(){
+            g1.style.backgroundColor='white';
+            g2.style.backgroundColor='white';
+            baner.style.backgroundColor='white';
+            gl.style.backgroundColor='white';
+            gp.style.backgroundColor='white';
+            stopka.style.backgroundColor='white';
+            a.style.color='black';
+            b.style.color='black';
+        }
+    </script>
+</body>
+</html>
