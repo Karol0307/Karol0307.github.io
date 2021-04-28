@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl4.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurtownia</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="hurtownia">
+    </div>
+    <div id="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog o kawie</a>
+        <a href="http://gatunki-kawy.pl" target="_blank">Odwiedź także</a>
+    </div>
+    <div id="baner">
+        <h1>Hurtownia kawy</h1>
+    </div>
+    <div id="lewy">
+        <h2>Oferta</h2>
+        <ol>
+            <li>Kawa palona Arabica</li>
+            <li>Kawa palona Robusta</li>
+            <li>Kawa bezkofeinowa</li>
+            <li id="zielona">Kawa zielona</li>
+        </ol>
+    </div>
+    <div id="prawy">
+        <p>Podaj numer karty:</p>
+        <input type="number" id="numer" min="0">
+        <p>Podaj wagę w dekagramach:</p>
+        <input type="number" id="waga" min="0">
+        <button onclick="zamowienie()">Zamów</button>
+        <p id="wynik"></p>
+    </div>
+    <div id="stopka">
+        <p>Stronę przygotował: <b>PESEL</b></p>
+    </div>
+    <script>
+        function zamowienie(){
+            var numer = +document.getElementById("numer").value;
+            var waga = +document.getElementById("waga").value;
+            var cena;
+            if(numer == 1){
+                cena = waga * 5;
+            }
+            else if(numer == 2){
+                cena = waga * 7;
+            }
+            else if(numer == 3){
+                cena = waga * 6;
+            }
+            else{
+                cena = 0;
+            }
+            document.getElementById("wynik").innerHTML="Koszt zamówienia wynosi: " + cena +" zł";
+        }
+    </script>
+</body>
+</html>
