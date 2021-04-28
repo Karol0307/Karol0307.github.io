@@ -43,7 +43,7 @@
         function zamowienie(){
             var numer = +document.getElementById("numer").value;
             var waga = +document.getElementById("waga").value;
-            var cena;
+            var cena = 0;
             if(numer == 1){
                 cena = waga * 5;
             }
@@ -52,9 +52,6 @@
             }
             else if(numer == 3){
                 cena = waga * 6;
-            }
-            else{
-                cena = 0;
             }
             document.getElementById("wynik").innerHTML="Koszt zamówienia wynosi: " + cena +" zł";
         }
