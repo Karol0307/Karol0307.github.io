@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Twoje BMI</title>
+	<link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+	<div id="logo">
+		<img src="wzor.png" alt="wzór BMI">
+	</div>
+	<div id="baner">
+		<h1>Oblicz swoje BMI</h1>
+	</div>
+	<div id="glowny">
+		<table>
+			<tr>
+				<th>Interpretacja BMI</th>   <th>Wartość minimalna</th>   <th>Wartość maksymalna</th>
+			</tr>
+			<tr>
+				<td>niedowaga</td><td>0</td><td>18</td>
+			</tr>
+			<tr>
+				<td>waga prawidłowa</td><td>19</td><td>25</td>
+			</tr>
+			<tr>
+				<td>nadwaga</td><td>26</td><td>30</td>
+			</tr>
+			<tr>
+				<td>otyłość</td><td>31</td><td>100</td>
+			</tr>
+		</table>
+	</div>
+	<div id="lewy">
+		<h2>Podaj wagę i wzrost</h2>
+		<p>Waga:</p>
+		<input type="number" id="waga" min="1">
+		<p>Wzrost w cm:</p>
+		<input type="number" id="wzrost" min="1"><br><br>
+		<button onclick="BMI()">Oblicz i zapamiętaj wynik</button>
+		<p id="wynik"></p>
+		<p id="grupa"></p>
+	</div>
+	<div id="prawy">
+		<img src="rys1.png" alt="ćwiczenia">
+	</div>
+	<div id="stopka">
+		<p>Autor: PESEL</p>
+	</div>
+<script>
+function BMI(){
+	var waga = +document.getElementById("waga").value;
+	var wzrost = +document.getElementById("wzrost").value;
+	var BMI = waga/(wzrost * wzrost) * 10000;
+	wynik.innerHTML="Twoja waga: " + waga + "<br>" + " Twój wzrost: " + wzrost + "<br>" + "BMI wynosi: " +BMI;
+	if(BMI >= 0 && BMI <= 18){
+	grupa.innerHTML="Masz niedowagę";
+	}
+	else if(BMI > 18 && BMI <= 25){
+	grupa.innerHTML="Masz prawidłową wagę";
+	}
+	else if(BMI > 25 && BMI <= 30){
+	grupa.innerHTML="Masz nadwagę";
+	}
+	else if(BMI > 30 && BMI <= 100){
+	grupa.innerHTML="Jestes otyły";
+	}
+	else{
+	grupa.innerHTML="ojoj";
+	}
+}
+</script>
+</body>
+</html>
