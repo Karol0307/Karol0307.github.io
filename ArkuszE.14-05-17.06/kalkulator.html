@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="pl">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="remont.css">
+		<title>Wyremontuj mieszkanie</title>
+	</html>
+	
+	<body>
+		<div id="baner">
+			<img src="logo.png">
+		</div>
+		<div id="menu1">
+			<a href="index.html">O NAS</a>
+		</div>
+		<div id="menu2">
+			<a href="kontakt.html">KONTAKT</a>
+		</div>
+		<div id="menu3">
+			<a href="kalkulator.html">KALKULATOR</a>
+		</div>
+		<div id="menu4">
+			<a href="http://www.jakremontowac.pl/" target="_blank">POLECANE STRONY</a>
+		</div>
+		<div id="glowny">
+			<h1>Malowanie pokoju: 8 zł na m<sup>2</sup></h1>
+			<label>Wymiary pokoju w metrach: </label>
+			<input type="number" id="wymiar1">
+			<input type="number" id="wymiar2"><br>
+			<button onclick="obliczenie()">OBLICZ KOSZT</button>
+			<p id="wynik1"></p>
+			<p id="wynik2"></p>
+		</div>
+		<div id="stopka">
+			<p>Autor strony: PESEL</p>
+		</div>
+		<script>
+			function obliczenie(){
+			var a = +document.getElementById("wymiar1").value;
+			var b = +document.getElementById("wymiar2").value;
+			var wymiar = ((2 * a) + (2 * b)) * 2.7;
+			wynik1.innerHTML = "Powierzchnia całkowita ścian: " + Math.ceil(wymiar * 100) / 100 + "m<sup>2</sup>";
+			var koszt = wymiar * 8;
+			wynik2.innerHTML = "Koszt malowania: " + Math.ceil(koszt * 100) / 100 + "zł";
+			}
+		</script>
+	</body>
+	
+	</html>
