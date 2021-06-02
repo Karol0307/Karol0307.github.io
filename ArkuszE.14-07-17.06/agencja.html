@@ -43,8 +43,8 @@
 			</div>
 			<script>
 				function oblicz(){
-					var metraz = document.getElementById("metraz").value;
-					var liczba_pokoj = document.getElementById("pokoje").value;
+					var metraz = +document.getElementById("metraz").value;
+					var liczba_pokoj = +document.getElementById("pokoje").value;
 					var result = (metraz * 4000) + (liczba_pokoj * 1000);
 					if(kafelki.checked == true){
 					result += 2000;
