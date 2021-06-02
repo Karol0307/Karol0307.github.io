@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+}
+#lewy{
+	width: 40%;
+	height: 600px;
+	background-color: #FF8989;
+	float: left;
+}
+#prawy{
+	width: 60%;
+	height: 600px;
+	background-color: #7872D9;
+	float: left;
+}
+#stopka{
+	background-color: black;
+	color: white;
+	font-size: 150%;
+	text-align: right;
+}
+ table, td{
+	margin: 20px;
+	padding: 30px;
+	border: 2px solid brown;
+	border-collapse: collapse;
+	}
+button{
+		margin: 10px;
+		padding: 10px;
+		border: 2px solid blue;
+		background-color: cyan;
+		font-size: 20px;
+}
+h1{
+		text-align: center;
+}
