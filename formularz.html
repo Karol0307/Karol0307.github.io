@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+    <header>
+        <h1>Formularz zgłoszeniowy</h1>
+    </header>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formularz zgłoszeniowy</legend>
+            <div class="pole">
+                <label>Imię <input type="text" name="imie"></label>
+            </div>
+            <div class="pole">
+                <label>Nazwisko <input type="text" name="nazwisko"></label>
+            </div>
+            <div class="pole">
+                <label>Hasło <input type="password" name="hasło"></label>
+            </div>
+            <div class="pole">
+                <textarea name="opis" placeholder="Wpisz czego potrzebujesz"></textarea>
+            </div>
+            <div class="pole">
+                <label>Adres e-mail<input type="email"></label>
+            </div>
+            <div class="pole">
+                <label>Numer telefonu<input type="tel"></label>
+            </div>
+            <div class="pole">
+                <label>Data <input type="date"></label>
+            </div>
+            <div class="pole">
+                <label>Czas <input type="time"></label>
+            </div>
+            <div class="pole">
+                <label>Plik <input type="file"></label>
+            </div>
+            <div class="pole">
+                <label>Kolor <input type="color"></label>
+            </div>
+            <div class="pole">
+                <label>Progress<progress max="100" value="20"></progress></label>
+            </div>
+            <div class="pole">
+                <label>Licznik <meter min="0" max="100" title="procent" low="20" high="80" optimum="50" value="60"></meter></label>
+            </div>
+            <div class="pole">
+                <label>URL <input type="url"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <div class="pole">
+                <label><input type="radio" name="opcja">opcja1</label>
+            </div>
+            <div class="pole">
+                <label><input type="radio" name="opcja">opcja2</label>
+            </div>
+            <div class="pole">
+                <label><input type="radio" name="opcja">opcja3</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <div class="pole">
+                <label><input type="checkbox" checked disabled>opcja1</label>
+            </div>
+            <div class="pole">
+                <label><input type="checkbox" checked>opcja2</label>
+            </div>
+            <div class="pole">
+                <label><input type="checkbox">opcja3</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Lista</legend>
+            <select name="lista">
+                <option>opcja1</option>
+                <option>opcja2</option>
+                <option>opcja3</option>
+            </select>
+            <select name="lista" multiple>
+                <option>opcja1</option>
+                <option>opcja2</option>
+                <option>opcja3</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+
+    <footer>
+        <h3>2021</h3>
+    </footer>
+</body>
+</html>
